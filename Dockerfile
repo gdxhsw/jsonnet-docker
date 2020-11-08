@@ -1,4 +1,4 @@
-FROM alpine:3.9 AS builder
+FROM alpine:3.12 AS builder
 WORKDIR /opt
 RUN apk add --update git build-base && \
     git clone https://github.com/google/jsonnet.git && \
